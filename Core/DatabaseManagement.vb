@@ -3960,7 +3960,7 @@ Public Class DatabaseManagement
 
         If IsDBNull(sValore) Then Return ""
         Return sValore.ToString
-        
+
 
     End Function
 

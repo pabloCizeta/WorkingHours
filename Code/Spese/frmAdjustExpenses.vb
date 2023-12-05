@@ -78,6 +78,7 @@ Public Class frmAdjustExpenses
             txtSpese.Text = "0"
             txtRiporti.Text = "0"
             txtContanti.Text = "0"
+            txtCompetenzeStraordinario.Text = ""
         Else
             dgv.DataSource = dtData 'bsTrace
             dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells)
@@ -125,6 +126,7 @@ Public Class frmAdjustExpenses
                 txtSpese.Text = "0"
                 txtRiporti.Text = "0"
                 txtContanti.Text = "0"
+                txtCompetenzeStraordinario.Text = ""
             End If
         End If
 
@@ -349,7 +351,10 @@ Public Class frmAdjustExpenses
         Else
             MsgBox("Dati salvati correttamente", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
             'Genera file per dati da importare nella versione dipendenti
-            Dim FileName As String = xGlobals.DataPath & "Imports\Data" & cboEmployeeName.Text.Replace(" ", "") & ".xml"
+            If Not System.IO.Directory.Exists(xGlobals.DataPath & "Employee") Then
+                System.IO.Directory.CreateDirectory(xGlobals.DataPath & "Employee")
+            End If
+            Dim FileName As String = xGlobals.DataPath & "Employee\Data" & cboEmployeeName.Text.Replace(" ", "") & ".xml"
             Dim Riporti As Single = TextToSingle(txtRiporti.Text)
             Dim data As New EmployeeData(FileName)
             Dim item As New EmployeeData.udtMoneyData
