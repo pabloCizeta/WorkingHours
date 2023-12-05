@@ -342,8 +342,22 @@ Public Class frmAdjustExpenses
 
         If Not xDatabase.UpdateRiporti(cboEmployeeName.Text, BeginDate, rip) Then
             MsgBox("Dati non salvati", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
+
+
+
+
         Else
             MsgBox("Dati salvati correttamente", MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
+            'Genera file per dati da importare nella versione dipendenti
+            Dim FileName As String = xGlobals.DataPath & "Imports\Data" & cboEmployeeName.Text.Replace(" ", "") & ".xml"
+            Dim Riporti As Single = TextToSingle(txtRiporti.Text)
+            Dim data As New EmployeeData(FileName)
+            Dim item As New EmployeeData.udtMoneyData
+            item.Riporti = Riporti
+            data.Data.MoneyAttuali.Add(item)
+            data.WriteDataToFile()
+
+            'data.ReadDataFromFile()
         End If
 
     End Sub

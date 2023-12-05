@@ -201,6 +201,7 @@
     <Compile Include="OreLavoro\Import\frmCambioNomeCommessa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ResPublic\EmployeeData.vb" />
     <Compile Include="ResPublic\frmFilter.Designer.vb">
       <DependentUpon>frmFilter.vb</DependentUpon>
     </Compile>
