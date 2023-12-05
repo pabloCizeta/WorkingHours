@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmAdjustExpenses
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmAdjustExpenses
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAdjustExpenses))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -28,8 +28,12 @@ Partial Class frmAdjustExpenses
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.panMenu = New System.Windows.Forms.Panel()
+        Me.mnu = New OreLavoro.ucMenu()
         Me.panOreLavoro = New System.Windows.Forms.Panel()
         Me.picArrowUp = New System.Windows.Forms.PictureBox()
+        Me.ucCable3 = New OreLavoro.ucCable()
+        Me.ucCable2 = New OreLavoro.ucCable()
+        Me.ucCable1 = New OreLavoro.ucCable()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtTrasfertaCedolino = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
@@ -114,6 +118,13 @@ Partial Class frmAdjustExpenses
         Me.panMenu.Size = New System.Drawing.Size(136, 620)
         Me.panMenu.TabIndex = 147
         '
+        'mnu
+        '
+        Me.mnu.Location = New System.Drawing.Point(-1, -2)
+        Me.mnu.Name = "mnu"
+        Me.mnu.Size = New System.Drawing.Size(135, 619)
+        Me.mnu.TabIndex = 1
+        '
         'panOreLavoro
         '
         Me.panOreLavoro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
@@ -143,6 +154,33 @@ Partial Class frmAdjustExpenses
         Me.picArrowUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picArrowUp.TabIndex = 304
         Me.picArrowUp.TabStop = False
+        '
+        'ucCable3
+        '
+        Me.ucCable3.BackColor = System.Drawing.Color.Black
+        Me.ucCable3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ucCable3.Location = New System.Drawing.Point(543, 93)
+        Me.ucCable3.Name = "ucCable3"
+        Me.ucCable3.Size = New System.Drawing.Size(276, 4)
+        Me.ucCable3.TabIndex = 242
+        '
+        'ucCable2
+        '
+        Me.ucCable2.BackColor = System.Drawing.Color.Black
+        Me.ucCable2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ucCable2.Location = New System.Drawing.Point(818, 70)
+        Me.ucCable2.Name = "ucCable2"
+        Me.ucCable2.Size = New System.Drawing.Size(4, 27)
+        Me.ucCable2.TabIndex = 241
+        '
+        'ucCable1
+        '
+        Me.ucCable1.BackColor = System.Drawing.Color.Black
+        Me.ucCable1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ucCable1.Location = New System.Drawing.Point(802, 70)
+        Me.ucCable1.Name = "ucCable1"
+        Me.ucCable1.Size = New System.Drawing.Size(20, 4)
+        Me.ucCable1.TabIndex = 240
         '
         'GroupBox2
         '

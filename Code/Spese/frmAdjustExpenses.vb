@@ -78,6 +78,7 @@ Public Class frmAdjustExpenses
             txtSpese.Text = "0"
             txtRiporti.Text = "0"
             txtContanti.Text = "0"
+            txtCompetenzeStraordinario.Text = ""
         Else
             dgv.DataSource = dtData 'bsTrace
             dgv.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells)
@@ -125,6 +126,7 @@ Public Class frmAdjustExpenses
                 txtSpese.Text = "0"
                 txtRiporti.Text = "0"
                 txtContanti.Text = "0"
+                txtCompetenzeStraordinario.Text = ""
             End If
         End If
 

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmOrders
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmOrders
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -109,14 +109,12 @@ Partial Class frmOrders
         '
         'txtOrderName
         '
-        Me.txtOrderName.Location = New System.Drawing.Point(195, 7)
         Me.txtOrderName.Name = "txtOrderName"
         Me.txtOrderName.Size = New System.Drawing.Size(252, 20)
         Me.txtOrderName.TabIndex = 215
         '
         'txtCustomerName
         '
-        Me.txtCustomerName.Location = New System.Drawing.Point(195, 35)
         Me.txtCustomerName.Name = "txtCustomerName"
         Me.txtCustomerName.Size = New System.Drawing.Size(252, 20)
         Me.txtCustomerName.TabIndex = 217
@@ -125,7 +123,6 @@ Partial Class frmOrders
         '
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(150, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(46, 20)
         Me.Label1.TabIndex = 216
@@ -135,7 +132,6 @@ Partial Class frmOrders
         'chkOrdedEnded
         '
         Me.chkOrdedEnded.AutoSize = True
-        Me.chkOrdedEnded.Location = New System.Drawing.Point(479, 12)
         Me.chkOrdedEnded.Name = "chkOrdedEnded"
         Me.chkOrdedEnded.Size = New System.Drawing.Size(51, 17)
         Me.chkOrdedEnded.TabIndex = 218
