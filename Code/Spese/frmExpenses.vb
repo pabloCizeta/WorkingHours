@@ -322,9 +322,9 @@ Public Class frmExpenses
                     Case "Analisys"
                         mnu.SuspendMenu()
                         Dim frm As New frmAnalisiRefound
-                        frm.ShowDialog(Me)
-                        frm.Dispose()
-                        frm = Nothing
+                        frm.Show(Me)
+                        'frm.Dispose()
+                        'frm = Nothing
                         mnu.ActivateMenuSuspended()
 
 

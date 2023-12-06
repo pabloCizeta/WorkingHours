@@ -215,11 +215,17 @@ Public Class frmWorkingDiary
                     Case "Analysis"
                         mnu.SuspendMenu()
                         Dim frm As New frmAnalisiOreLavoro
-                        frm.ShowDialog(Me)
-                        frm.Dispose()
-                        frm = Nothing
+                        frm.Show(Me)
+                        'frm.Dispose()
+                        'frm = Nothing
                         mnu.ActivateMenuSuspended()
 
+                    Case "UpdateFile"
+                        mnu.SuspendMenu()
+                        Me.Cursor = Cursors.WaitCursor
+                        UpdateFile()
+                        mnu.ActivateMenuSuspended()
+                        Me.Cursor = Cursors.Default
 
                 End Select
         End Select
@@ -420,6 +426,16 @@ Public Class frmWorkingDiary
         pdfShow.Dispose()
         pdfShow = Nothing
 
+
+    End Sub
+
+    Private Sub UpdateFile()
+        Dim DaysInMonth As Integer = Date.DaysInMonth(dtpDate.Value.Year, dtpDate.Value.Month)
+        Dim EndDate As Date = New Date(dtpDate.Value.Year, dtpDate.Value.Month, DaysInMonth)
+        Dim BeginDate As Date = New Date(dtpDate.Value.Year, dtpDate.Value.Month, 1)
+
+        'Get Employee file
+        Dim FileName As String = xGlobals.DataPath & "Imports\Diario" & cboEmployeeName.Text.Replace(" ", "") & ".xml"
 
     End Sub
 

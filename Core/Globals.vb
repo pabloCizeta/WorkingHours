@@ -228,7 +228,8 @@ Public Module ResPublic
         Dim actDate As New Date
         actDate = BeginDate
 
-        Dim year As Integer = Date.Now.Year
+        'Dim year As Integer = Date.Now.Year
+        Dim year As Integer = EndDate.Year
 
         Dim Festivita As New List(Of DateTime)
         Festivita.Clear()
